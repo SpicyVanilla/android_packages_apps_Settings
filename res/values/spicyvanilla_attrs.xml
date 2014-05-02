@@ -24,4 +24,12 @@
         <attr name="defaultText" format="string|reference" />
     </declare-styleable>
 
+    <!-- Interval seek bar for the system animations scale-->
+    <declare-styleable name="IntervalSeekBar">
+        <attr name="minI" format="float" />
+        <attr name="maxI" format="float" />
+        <attr name="defaultValueAni" format="float" />
+        <attr name="digits" format="integer" />
+    </declare-styleable>
+
 </resources>
