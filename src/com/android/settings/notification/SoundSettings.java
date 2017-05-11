@@ -28,6 +28,8 @@ import android.preference.SeekBarVolumizer;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.TwoStatePreference;
 import android.text.TextUtils;
@@ -51,6 +53,7 @@ public class SoundSettings extends DashboardFragment {
 
     //private static final String KEY_CELL_BROADCAST_SETTINGS = "cell_broadcast_settings";
     private static final String SELECTED_PREFERENCE_KEY = "selected_preference";
+    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
     private static final String KEY_VOLUME_LINK_NOTIFICATION = "volume_link_notification";
     private static final int REQUEST_CODE = 200;
 
@@ -82,11 +85,16 @@ public class SoundSettings extends DashboardFragment {
                 mRequestPreference = (RingtonePreference) findPreference(selectedPreference);
             }
         }
+
+        PreferenceScreen prefScreen = getPreferenceScreen();
+        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+
         if (Utils.isVoiceCapable(getContext())) {
             mVolumeLinkNotification = (TwoStatePreference) findPreference(KEY_VOLUME_LINK_NOTIFICATION);
             initVolumeLinkNotification();
             updateVolumeLinkNotification();
         } else {
+            prefScreen.removePreference(incallVibCategory);
             removePreference(KEY_VOLUME_LINK_NOTIFICATION);
         }
     }
