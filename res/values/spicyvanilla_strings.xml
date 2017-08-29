@@ -20,4 +20,7 @@
     <string name="build_date">Spicy Vanilla build date</string>
     <string name="build_date_default">2017-08-01-0000</string>
 
+    <!-- Enable Development Settings By Default regardless of build type-->
+    <string name="show_dev_already_enabled">No Need, Development settings are enabled by default.</string>
+
 </resources>
