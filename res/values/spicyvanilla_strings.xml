@@ -23,4 +23,7 @@
     <!-- Enable Development Settings By Default regardless of build type-->
     <string name="show_dev_already_enabled">No Need, Development settings are enabled by default.</string>
 
+    <!-- Phone info shortcut -->
+    <string name="device_info_title">Phone info</string>
+
 </resources>
