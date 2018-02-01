@@ -72,4 +72,7 @@
     <string name="menu_stats_reset">Reset stats</string>
     <string name="reset_stats_msg">The battery history stats are going to be reset</string>
 
+    <!-- Expose the notification log -->
+    <string name="notification_log_summary">Show notifications history log</string>
+
 </resources>
