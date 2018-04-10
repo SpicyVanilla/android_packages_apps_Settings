@@ -75,4 +75,7 @@
     <!-- Expose the notification log -->
     <string name="notification_log_summary">Show notifications history log</string>
 
+    <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">It\u2019s on the back of your phone. You can use any finger.</string>
+
 </resources>
