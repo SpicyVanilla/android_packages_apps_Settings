@@ -79,4 +79,8 @@
     <string name="unlock_quick_unlock_control_title">Quick unlock</string>
     <string name="unlock_quick_unlock_control_summary">Automatically unlock when the correct PIN/password is entered</string>
 
+    <!-- Volume key controls media stream -->
+    <string name="volume_keys_control_media_stream_title">Control media volume</string>
+    <string name="volume_keys_control_media_stream_summary">Force the volume keys to control the media stream at any time</string>
+
 </resources>
